@@ -72,8 +72,8 @@ import UserNotifications
   @objc public var tripStartedAt: Swift.String!
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class GeoSpark : ObjectiveC.NSObject {
   @objc public static var delegate: GeoSpark.GeoSparkDelegate! {
@@ -212,8 +212,8 @@ public enum LocationAccuracy {
   @objc public var tripTrackingUrl: Swift.String!
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class GeoSparkTrip : ObjectiveC.NSObject {
   @objc public var tripId: Swift.String!
