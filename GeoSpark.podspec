@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   s.module_name           = 'GeoSpark'
   s.ios.deployment_target = '10.0'
   s.swift_version         = '5.0'
-  s.dependency 'AWSIoT'
-  s.dependency 'AWSMobileClient'
-  s.static_framework      = true
+  s.dependency 'AWSIoT',:modular_headers => true
+  s.dependency 'AWSMobileClient',:modular_headers => true
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
