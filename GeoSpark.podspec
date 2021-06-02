@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'GeoSpark'
-  s.version               = '3.1.1'
+  s.version               = '3.1.2'
   s.summary               = 'iOS SDK for GeoSpark, the location intelligence platform'
   s.homepage              = 'https://geospark.co'
   s.social_media_url      = 'https://twitter.com/geosparkai'
@@ -13,8 +13,9 @@ Pod::Spec.new do |s|
   s.module_name           = 'GeoSpark'
   s.ios.deployment_target = '10.0'
   s.swift_version         = '5.0'
-  s.dependency 'AWSIoT',:modular_headers => true
-  s.dependency 'AWSMobileClient',:modular_headers => true
+  s.dependency 'AWSIoT'
+  s.dependency 'AWSMobileClient'
+  s.static_framework = false
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
